@@ -1,0 +1,87 @@
+<!--Design a home page which will display your information, i.e. Bio data, 
+using Image Link and File Link to upload images and necessary documents.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Homepage</title>
+    <link rel="stylesheet" href="bio-data.css">
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: hsl(278, 93%, 55%);
+    color: #fff;
+
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 40px solid green;
+    border-radius: 50px;
+}
+
+form {
+    margin-top: 10px;
+}
+
+input[type="file"] {
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    background-color: hwb(130 1% 69%);
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color: #00f7ff;">My Personal Homepage</h1>
+    </header>
+    <section id="bio-data">
+        <h2>Bio Data</h2>
+        <p>Name: [XXXXX XXX XXX]</p>
+        <p>Email: [XXXX XXXX XXX]</p>
+        <p>Location: [Your Location]</p>
+    </section>
+    <section id="image-upload">
+        <h2>Upload Your Image</h2>
+        <form action="" method="">
+            <input type="file" name="image" accept="image/*" required>
+            <input type="submit" value="Upload">
+        </form>
+    </section>
+    <section id="file-upload">
+        <h2>Upload Necessary Documents</h2>
+        <form action="" method="POST">
+            <input type="file" name="document" required>
+            <input type="submit" value="Upload">
+        </form>
+    </section>
+    <section style="text-align: center; background-color: aqua;" >
+        <h2>Thank You</h2>
+    </section>
+</body>
+
+</html>
+
